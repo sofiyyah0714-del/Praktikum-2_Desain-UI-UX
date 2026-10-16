@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pemesanan Barang</title>
+</head>
+<body>
+<table border="1" cellpadding="5" cellspacing="0" width="100%">
+        <tr>
+            <td align="center">Home</td>
+            <td align="center">Generate Link</td>
+            <td align="center">Transaction History</td>
+            <td align="center">Policy</td>
+            <td align="center">Logout</td>
+        </tr>
+    </table>
+    
+    <br><br>
+    <form action="/praktikum02/praktikummandiri02/hasil.html" method="POST" enctype="multipart/form-data">
+        <table border="0" cellpadding="5">
+            <tr>
+                <td align="center" valign="top">
+                    <img src="/praktikum02/praktikummandiri02/asset/Laptop.png" width="150" height="150" alt="Foto Barang">
+                </td>
+                                <!--Title here -->
+                <td valign="top">
+                    <label>Title Here :</label>
+                    <input type="text" name="title" value="MacBook Air £800" size="30"><br><br>
+                    
+                <!--Description-->
+                    <label>Description :</label>
+                    <textarea name="description" rows="5" cols="25">Year : 2009
+
+Model :
+
+Condition : Mint</textarea><br><br>
+
+   <!--Account number-->
+                    <label>Account Number :</label>
+                    <input type="text" name="account_number" value="123-456-789-0"><br><br>
+
+   <!--Bank-->
+                    <label>Bank :</label>
+                    <select name="bank">
+                        <option value="HSBC" selected>HSBC</option>
+                        <option value="BCA">BCA</option>
+                        <option value="Mandiri">Mandiri</option>
+                    </select><br><br>
+
+   <!--Account holder -->
+                    <label>Account Holder :</label>
+                    <input type="text" name="account_holder" placeholder="Sofiyyah"><br><br>
+
+  <!--Transaction-->
+  <label>Transaction :</label>
+  <select name="transaction">
+      <option value="1" selected>1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+  </select><br>
+  <small>* if the transaction is for 3 person, choose 3 from the drop-down list</small><br><br>
+   
+   <!--check box-->
+   <p>          
+   <input type="checkbox" name="send_mobile" checked> Send to Mobile Phone<br>
+   <input type="checkbox" name="send_email" checked> Send to Email<br><br>
+   </p>
+
+  <!--masukkan nomor hp-->
+   <label>Send to Mobile Phone :</label>
+   <input type="text" name="mobile_number" value="123456789" size="30">
+   <br><br>
+
+  <!--Masukkan email-->
+  <label>Send to Email :</label>
+       <input type="text" name="email" value="sofiyyah0714@gmail.com" size="35"><br><br>
+       
+     <br>
+   <div align="center">
+       <button>Generate Nabr Link</button>
+   </div>
+
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
